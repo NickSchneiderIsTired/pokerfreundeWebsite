@@ -80,6 +80,12 @@ const TopBar = ({ classes }) => {
             {"Menu"}
           </span>
           <span
+            className={pathName === '/location' ? classes.selectedNavButton : classes.navButton}
+            onClick={handleNav('location')}
+          >
+            {"Location"}
+          </span>
+          <span
             className={pathName === '/tournaments' ? classes.selectedNavButton : classes.navButton}
             onClick={handleNav('tournaments')}
           >
