@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router';
 import logo from '../res/logoTransparent.png';
 
-const styles = theme => ({
+const styles = {
   root: {
     backgroundColor: '#1f1f1f',
     display: 'block',
@@ -46,9 +46,9 @@ const styles = theme => ({
   grow: {
     flexGrow: 1,
   },
-});
+};
 
-const TopBar = ({ classes, authenticated=false }) => {
+const TopBar = ({ classes }) => {
   const navigate = useNavigate();
 
   const handleNav = route => () => {

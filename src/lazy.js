@@ -1,3 +1,4 @@
+import React from 'react';
 import { lazy, Suspense } from "react";
 
 export default function makeLoadableComponent(loader) {
