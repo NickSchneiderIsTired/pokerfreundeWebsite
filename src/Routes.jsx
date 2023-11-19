@@ -7,6 +7,7 @@ const AsyncMenu = makeLoadableComponent(() => import("./containers/Menu"));
 const AsyncTournaments = makeLoadableComponent(() => import("./containers/Tournaments"));
 const AsyncRegistry = makeLoadableComponent(() => import("./containers/Register"));
 const AsyncLocation = makeLoadableComponent(() => import("./containers/Location"));
+const AsyncRankings = makeLoadableComponent(() => import("./containers/Rankings"));
 
 const AppRoutes = () => (
   <Routes>
@@ -25,6 +26,10 @@ const AppRoutes = () => (
     <Route
       path="/register"
       element={<AsyncRegistry />}
+    />
+    <Route
+      path="/rankings"
+      element={<AsyncRankings />}
     />
   </Routes>
 );

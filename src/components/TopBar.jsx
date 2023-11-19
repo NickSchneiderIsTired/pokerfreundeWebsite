@@ -97,6 +97,12 @@ const TopBar = ({ classes }) => {
           >
             {"Turnieranmeldung"}
           </span>
+          <span
+            className={pathName === '/rankings' ? classes.selectedNavButton : classes.navButton}
+            onClick={handleNav('rankings')}
+          >
+            {"Ranglisten"}
+          </span>
         </div>
       </Toolbar>
     </AppBar>
