@@ -1,40 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table, TableBody, TableCell, TableRow } from '@mui/material';
 import '../App.css';
 
 function Tournaments() {
+  const [tournaments, setTournaments] = useState([]);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      const json = await fetch("tournaments.json")
+        .then(r => r.json())
+        .catch(err => console.log(err));
+      setTournaments(json?.data || []);
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="App">
       <div className="App-header">
         <div className='content'>
-          <h1>Spieltermine 2023/24</h1>
+          <h2>Spieltermine 2024/25</h2>
           <Table>
             <TableBody>
-              <TableRow>
-                <TableCell>10. SnG Turnier</TableCell>
-                <TableCell>Beginn 17:30</TableCell>
-                <TableCell>03.02.24</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>10. Freeze Out Turnier</TableCell>
-                <TableCell>Beginn 17:30</TableCell>
-                <TableCell>17.02.24</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>1. Sachpreisturnier</TableCell>
-                <TableCell>Beginn 17:30</TableCell>
-                <TableCell>02.03.24</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>2. Sachpreisturnier</TableCell>
-                <TableCell>Beginn 17:30</TableCell>
-                <TableCell>16.03.24</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell>Jahreshauptversammlung</TableCell>
-                <TableCell>Beginn t.b.d.</TableCell>
-                <TableCell>13.04.24</TableCell>
-              </TableRow>
+              {tournaments.map((row, idx) => 
+                <TableRow key={idx}>
+                  <TableCell>{row.name}</TableCell>
+                  <TableCell>{row.start}</TableCell>
+                  <TableCell>{row.date}</TableCell>
+                </TableRow>
+              )}
             </TableBody>
           </Table>
         </div>

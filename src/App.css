@@ -36,5 +36,6 @@
 }
 
 .content {
-  width: 800px
+  width: 800px;
+  padding: 8px;
 }
