@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router';
 import { Button, Table, TableBody, TableCell, TableRow } from '@mui/material';
+import tournaments from '../res/tournaments.json';
 
 function Menu() {
   const navigate = useNavigate();
-  const [tournaments, setTournaments] = useState([]);
+  /*const [tournaments, setTournaments] = useState([]);
   
   useEffect(() => {
     const fetchData = async () => {
@@ -15,7 +16,7 @@ function Menu() {
       setTournaments(json?.data || []);
     }
     fetchData();
-  }, []);
+  }, []);*/
 
   return (
     <div className="App">

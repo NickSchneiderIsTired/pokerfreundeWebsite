@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Table, TableBody, TableCell, TableRow } from '@mui/material';
 import '../App.css';
+import tournaments from '../res/tournaments.json';
+
 
 function Tournaments() {
-  const [tournaments, setTournaments] = useState([]);
+  /*const [tournaments, setTournaments] = useState([]);
   
   useEffect(() => {
     const fetchData = async () => {
@@ -13,7 +15,7 @@ function Tournaments() {
       setTournaments(json?.data || []);
     }
     fetchData();
-  }, []);
+  }, []);*/
 
   return (
     <div className="App">
