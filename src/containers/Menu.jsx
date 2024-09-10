@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router';
-import { Button, Table, TableBody, TableCell, TableRow } from '@mui/material';
+import { Button, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import tournaments from '../res/tournaments.json';
 
 function Menu() {
@@ -27,13 +27,22 @@ function Menu() {
             Pokern im Verein ohne Geldeinsätze
           </p>
           <h2>Spieltermine 2024/25</h2>
-          <Table>
+          <Table size='small'>
+            <TableHead>
+              <TableRow>
+                <TableCell>Turnier</TableCell>
+                <TableCell>Datum</TableCell>
+                <TableCell>Uhrzeit</TableCell>
+                <TableCell>Ort</TableCell>
+              </TableRow>
+            </TableHead>
             <TableBody>
               {tournaments.map((row, idx) => 
                 <TableRow key={idx}>
                   <TableCell>{row.name}</TableCell>
                   <TableCell>{row.start}</TableCell>
                   <TableCell>{row.date}</TableCell>
+                  <TableCell>{row.location}</TableCell>
                 </TableRow>
               )}
             </TableBody>

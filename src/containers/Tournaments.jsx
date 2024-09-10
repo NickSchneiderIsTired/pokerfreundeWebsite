@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, TableBody, TableCell, TableRow } from '@mui/material';
+import { Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import '../App.css';
 import tournaments from '../res/tournaments.json';
 
@@ -22,13 +22,22 @@ function Tournaments() {
       <div className="App-header">
         <div className='content'>
           <h2>Spieltermine 2024/25</h2>
-          <Table>
+          <Table size='small'>
+            <TableHead>
+              <TableRow>
+                <TableCell>Turnier</TableCell>
+                <TableCell>Datum</TableCell>
+                <TableCell>Uhrzeit</TableCell>
+                <TableCell>Ort</TableCell>
+              </TableRow>
+            </TableHead>
             <TableBody>
               {tournaments.map((row, idx) => 
                 <TableRow key={idx}>
                   <TableCell>{row.name}</TableCell>
                   <TableCell>{row.start}</TableCell>
                   <TableCell>{row.date}</TableCell>
+                  <TableCell>{row.location}</TableCell>
                 </TableRow>
               )}
             </TableBody>

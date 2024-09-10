@@ -1,8 +1,10 @@
-[
-  { "name": "1. Freeze Out Turnier", "start": "17:30", "date": "04.05.24" },
-  { "name": "2. SnG Turnier", "start": "17:30", "date": "18.05.24" },       
-  { "name": "2. Freeze Out Turnier", "start": "17:30", "date": "01.06.24" },
-  { "name": "3. SnG Turnier", "start": "17:30", "date": "22.06.24" },       
-  { "name": "3. Freeze Out", "start": "17:30", "date": "06.07.24" },        
-  { "name": "4. SnG Turnier", "start": "17:30", "date": "20.07.24" }        
+[     
+  { "name": "4. Freeze Out", "start": "17:00", "date": "07.09.24", "location": "Schlossgarten" },
+  { "name": "5. SnG Turnier", "start": "17:00", "date": "21.09.24", "location": "Uwe's Pokerraum" },
+  { "name": "5. Freeze Out", "start": "17:00", "date": "05.10.24", "location": "Schlossgarten" },
+  { "name": "6. SnG Turnier", "start": "17:00", "date": "19.09.24", "location": "Schlossgarten" },
+  { "name": "6. Freeze Out", "start": "17:00", "date": "09.11.24", "location": "Schlossgarten" },
+  { "name": "7. SnG Turnier", "start": "17:00", "date": "16.11.24", "location": "Uwe's Pokerraum" },
+  { "name": "7. Freeze Out", "start": "17:00", "date": "30.11.24", "location": "Schlossgarten" },
+  { "name": "Weihnachtsfeier", "start": "Noch offen", "date": "13.12.24", "location": "Schlossgarten" }
 ]
