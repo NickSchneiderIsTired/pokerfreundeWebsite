@@ -1,4 +1,4 @@
-PACKAGE_NAME = grommunio-partner-portal
+PACKAGE_NAME = pokerfreunde
 
 # Tools
 
