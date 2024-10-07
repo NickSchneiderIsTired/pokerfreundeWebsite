@@ -35,8 +35,8 @@ function Tournaments() {
               {tournaments.map((row, idx) => 
                 <TableRow key={idx}>
                   <TableCell>{row.name}</TableCell>
-                  <TableCell>{row.start}</TableCell>
                   <TableCell>{row.date}</TableCell>
+                  <TableCell>{row.start}</TableCell>
                   <TableCell>{row.location}</TableCell>
                 </TableRow>
               )}
