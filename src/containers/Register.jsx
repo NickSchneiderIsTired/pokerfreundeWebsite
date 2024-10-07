@@ -10,7 +10,7 @@ function Register() {
             Anmeldungen bitte direkt per E-Mail mit Namen an 
           <a
             className="App-link"
-            style={{ marginLeft: 6 }} href="mailto:pokerfreunde2023@gmail.com">pokerfreunde2023@gmail.com</a>
+            style={{ marginLeft: 6 }} href="mailto:info@pokerfreunde2018.de">info@pokerfreunde2018.de</a>
         </div>
       </div>
     </div>
