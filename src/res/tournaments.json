@@ -1,5 +1,8 @@
 [
-  { "name": "6. Freeze Out", "start": "17:00", "date": "09.11.24", "location": "Schlossgarten" },
-  { "name": "7. SnG Turnier", "start": "17:00", "date": "16.11.24", "location": "Uwe's Pokerraum" },
-  { "name": "Bountyturnier", "start": "17:00", "date": "30.11.24", "location": "Schlossgarten" }
+  { "name": "8. SnG", "start": "17:00", "date": "18.01.25", "location": "Schlossgarten" },
+  { "name": "8. MTT", "start": "17:00", "date": "01.02.25", "location": "Schlossgarten" },
+  { "name": "9. SnG", "start": "17:00", "date": "22.02.25", "location": "Schlossgarten" },
+  { "name": "9. MTT", "start": "17:00", "date": "08.03.25", "location": "Schlossgarten" },
+  { "name": "10. SnG", "start": "17:00", "date": "22.03.25", "location": "Schlossgarten" },
+  { "name": "10. MTT", "start": "17:00", "date": "05.04.25", "location": "Schlossgarten" }
 ]

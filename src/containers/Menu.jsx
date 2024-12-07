@@ -30,19 +30,19 @@ function Menu() {
           <Table size='small'>
             <TableHead>
               <TableRow>
-                <TableCell>Turnier</TableCell>
-                <TableCell>Datum</TableCell>
-                <TableCell>Uhrzeit</TableCell>
-                <TableCell>Ort</TableCell>
+                <TableCell align='center'>Turnier</TableCell>
+                <TableCell align='center'>Datum</TableCell>
+                <TableCell align='center'>Uhrzeit</TableCell>
+                <TableCell align='center'>Ort</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {tournaments.map((row, idx) => 
                 <TableRow key={idx}>
-                  <TableCell>{row.name}</TableCell>
-                  <TableCell>{row.date}</TableCell>
-                  <TableCell>{row.start}</TableCell>
-                  <TableCell>{row.location}</TableCell>
+                  <TableCell align='center'>{row.name}</TableCell>
+                  <TableCell align='center'>{row.date}</TableCell>
+                  <TableCell align='center'>{row.start}</TableCell>
+                  <TableCell align='center'>{row.location}</TableCell>
                 </TableRow>
               )}
             </TableBody>
